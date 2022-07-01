@@ -102,3 +102,10 @@ def ms():
         'srtf.cpp',
         media_type='text'
     )
+
+@api.get("/ls")
+def ms():
+    return FileResponse(
+        'list.txt',
+        media_type='text'
+    )
